@@ -9,10 +9,11 @@
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
    <children>
-      <Label text="Tus hábitos" />
-      <CheckBox mnemonicParsing="false" text="Habit1" />
-      <CheckBox mnemonicParsing="false" text="Habit2" />
-      <CheckBox mnemonicParsing="false" text="Habit3" />
-      <Button mnemonicParsing="false" text="Finalizar día" />
+      <Label fx:id="myLabel" styleClass="custom-label" text="Tus hábitos" />
+      <CheckBox fx:id="checkBox1" mnemonicParsing="false" onAction="#onCheckBox1" text="Habit1" />
+      <CheckBox fx:id="checkBox2" mnemonicParsing="false" onAction="#onCheckBox2" text="Habit2" />
+      <CheckBox fx:id="checkBox3" mnemonicParsing="false" onAction="#onCheckBox3" text="Habit3" />
+      <Button fx:id="button" mnemonicParsing="false" onAction="#onButtonDay" text="Finalizar día" textFill="#673c61" />
+      <Label fx:id="counterLabel" />
    </children>
 </VBox>
